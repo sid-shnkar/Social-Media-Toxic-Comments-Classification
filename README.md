@@ -53,3 +53,10 @@ For ensembling different models, three popular tree-based boosting models : **Ad
 ![smtcc-p8](https://user-images.githubusercontent.com/104520126/166720749-14edec44-405c-4d79-9c2f-41bb9aa739d4.jpg)
 
 ## Results
+
+Linear SVM performed the best in terms of the evaluation metrics and is the fastest of the three models we compared. But at the same time, we may get better results after tuning the hyperparameters for ensembling.
+
+![smtcc-p9](https://user-images.githubusercontent.com/104520126/166722107-16380b15-bb28-4c92-8086-1ee046fc1cc1.jpg)
+
+![smtcc-p10](https://user-images.githubusercontent.com/104520126/166722200-ac6b4aa8-b90f-4f19-8c18-c0276f543203.jpg)
+
