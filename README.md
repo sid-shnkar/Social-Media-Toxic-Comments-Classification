@@ -24,9 +24,25 @@ In order to fit the comments properly into the model, **tokenization** was used 
 
 ## Model Selection
 
+For modelling purpose, three models that are known to perform well in text classification were compared against each other, they are **Linear SVM** , **Multinomial Naive Bayes** and **Logistic Regression**. The evaluation metrics used to check the performance were: **F1-score**, **Recall** and **Hamming Loss**.
+Initally, the cross-validation F1-score and Recall were compared using the training dataset and it was observed that Linear SVM and Logistic Regression model performed much better than Multinomial Naive Bayes.
 
+On the test dataset also, multinomial naive bayes model didn't performed well as compared to others and it was observed that Linear SVM model performed slightly better than Logistic Regression model. Further, confusion matrices were plotted for the most common label 'toxic' and it was observed that all the three models predicted non-toxic labels fairly well probably because most of the data was non-toxic.
+
+![smtcc-p4](https://user-images.githubusercontent.com/104520126/166706575-504758b6-faac-4a30-92ab-46fb437a558c.jpg)
+![smtcc-p6](https://user-images.githubusercontent.com/104520126/166706595-30c1d57e-c543-4686-ad4d-55ee51481d25.jpg)
+
+Aggregate hamming loss was also calculated for each model and it was found that Logistic Regression had the least percentage of labels incorrectly classified.
+
+Pipelines were constructed to compare Linear SVM and Logistic Regression models and 'class_weight' hyperparamter was manually chosen to aim for better results than the basic models itself.
+
+
+
+The result showed that Linear SVC performed better than Logistic Regression model. 
 
 ## Hyperparameter tuning
+
+
 
 ## Ensembling
 
