@@ -42,12 +42,14 @@ The result showed that Linear SVC performed better than Logistic Regression mode
 
 ## Hyperparameter tuning
 
-The optimal hyperparamters for the basic models were found out using Grid Search, considering only the label 'toxic' since it was the most common label, to tune the hyperparameters.
+The optimal hyperparamters for the basic models were found out using **Grid Search**, considering only the label 'toxic' since it was the most common label, to tune the hyperparameters.
 
 ![smtcc-p7](https://user-images.githubusercontent.com/104520126/166707410-37217afd-97d8-4575-b579-30c756ad7eb2.jpg)
 
 ## Ensembling
 
+For ensembling different models, three popular tree-based boosting models : **Adaptive Boosting**, **Gradient Boosting** and **XG Bossting** were compared against each other on the evaluation metrics described earlier. The result showed that XGBoost Classifier performed the best out of all three classifiers and so a voting classifier was used to ensemble XGBoost model with our Logistic Regression and Linear SVM models.
 
+![smtcc-p8](https://user-images.githubusercontent.com/104520126/166720749-14edec44-405c-4d79-9c2f-41bb9aa739d4.jpg)
 
 ## Results
