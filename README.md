@@ -34,16 +34,20 @@ On the test dataset also, multinomial naive bayes model didn't performed well as
 
 Aggregate hamming loss was also calculated for each model and it was found that Logistic Regression had the least percentage of labels incorrectly classified.
 
+![smtcc-p2](https://user-images.githubusercontent.com/104520126/166707824-ab55deac-9d75-45cb-a356-3d737ae34c07.jpg)
+
 Pipelines were constructed to compare Linear SVM and Logistic Regression models and 'class_weight' hyperparamter was manually chosen to aim for better results than the basic models itself.
-
-
 
 The result showed that Linear SVC performed better than Logistic Regression model. 
 
 ## Hyperparameter tuning
 
+The optimal hyperparamters for the basic models were found out using Grid Search, considering only the label 'toxic' since it was the most common label, to tune the hyperparameters.
 
+![smtcc-p7](https://user-images.githubusercontent.com/104520126/166707410-37217afd-97d8-4575-b579-30c756ad7eb2.jpg)
 
 ## Ensembling
+
+
 
 ## Results
